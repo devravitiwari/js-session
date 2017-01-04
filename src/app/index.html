@@ -9,7 +9,64 @@
     <h3>Welcome all. Let's <em>play with</em> JavaScript</h3>
     <hr>
 
+    <h3>DataTypes in JavaScript</h3>
+    <p>
+        There are <em>primitive</em> and <em>derived</em> data types in any language.
+        Primitives have native support. By native we mean they are inherently supported
+        at the lowest level - assembly code through memory registers etc - by the runtime enviroment - JS engine in browser or Node on server.
+        Derived are the ones built on top of primitives - like custom types, domain types etc.
+        You all create custom types without realizing.
 
+
+        <section>
+            <h4>Primitives</h4>
+            <ul>
+                <li>null</li>
+                <li>undefined</li>
+                <li>boolean</li>
+                <li>number</li>
+                <li>string</li>
+                <li>symbol - ES6 onwards</li>
+            </ul>
+
+            We have wrapper objects for these primitives
+            <ul>
+                <li>Boolean</li>
+                <li>Number</li>
+                <li>String</li>
+                <li>Symbol</li>
+            </ul>
+
+            Each wrapper has <em>valueOf()</em> <del>function</del> <ins>method</ins> that return
+            primitive values
+
+            All primitives are <strong>immutable</strong>(their value cannot be changed)
+
+        </section>
+
+        <section>
+            <h4>Derived</h4>
+            <strong>Object</strong> is the root derived type in JavaScript. Other objects that derive from
+            Object are :
+            <ul>
+                <li>Date</li>
+                <li>Array</li>
+                <li>Math</li>
+                <li>RegExp</li>
+                <li>Error</li>
+                <li>Functions - yes, <em>function</em>s : These are regular objects with the additional
+                    capability of being callable</li>
+                <li>Promise - ES6 onwards</li>
+                <li> ... and many more</li>
+            </ul>
+
+            When we create an object by any means - {}, new Object - what is create is called a type.
+            This type derives from <strong>Object</strong> and is the basic building block of our domain.
+
+        </section>
+
+
+    </p>
 
     <script src="app.js"></script>
 
