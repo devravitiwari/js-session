@@ -47,7 +47,7 @@ assigned to other variables, passed as arguments to other functions in which
 case they are referred to as callbacks.
 
 ```js
-var multiply = function(num1, num1){
+var multiply = function(num1, num2){
   return num1*num2;
 }
 ```
